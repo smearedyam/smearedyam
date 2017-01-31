@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  min-height: 600px;
+  color: #212121;
+}
+
+a {
+  color: #FF4081;
+}
+
+.container {
+  max-width: 1024px;
+}
+
+md-tooltip {
+  background-color: black;
+  padding: 5px;
+}
+
+.raison {
+
+  margin-bottom: 20px;
+
+}
+
+.chart {
+
+  table.character_table {
+    border-collapse: collapse;
+
+    md-checkbox {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .md-button {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      span {
+        color: #FF4081;
+        text-decoration: none;
+        text-transform: none;
+      }
+    }
+
+    tr.ineligible {
+      opacity: 0.5;
+    }
+
+    tr.candidate, tr.candidate.ineligible {
+      opacity: 1.0;
+      td.character{
+        color: #1976D2;
+      }
+    }
+
+    tr.unique {
+      background-color: #B6B6B6;
+    }
+
+    tr.selected, tr.selected.ineligible {
+      background-color: #FFFF8D;
+    }
+
+    th, td {
+      border: 1px solid black;
+    }
+
+    th {
+      padding-top: 5px;
+      min-width: 35px;
+    }
+
+    th.rank {
+
+      width: 38px;
+      margin-left: 3px;
+      button.md-icon-button {
+        width: 12px;
+        margin-left: 3px;
+        margin-right: 0;
+      }
+    }
+
+    td.zero {
+      border-top: 0;
+      border-left: 0;
+    }
+
+    td {
+      padding: 0;
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+
+    td.rank {
+      text-align: center;
+      margin-left: 5px;
+    }
+
+    td.character {
+      padding-left: 5px;
+
+      span.stars {
+        display: inline-block;
+      }
+    }
+
+    td.ability {
+      div {
+        height:36px;
+      }
+
+      .active {
+        opacity: 1.0;
+      }
+
+      .passive {
+        content: "P";
+        opacity: 0.4;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        border: 8px solid black;
+        border-radius:50%;
+        text-align: center;
+
+      }
+
+      .taken.active {
+        opacity: 0.4;
+      }
+    }
+
+    tr.selected {
+      td.ability {
+        .taken.active {
+          opacity: 1.0;
+        }
+      }
+    }
+
+    td.ability.yellow {
+      div.active {
+        background-color: #C29325;
+      }
+      div.passive {
+        color: #C29325;
+        border-color: #C29325;
+      }
+    }
+    td.ability.red {
+      div.active {
+        background-color: #B71C1C;
+      }
+
+      div.passive {
+        border-color: #B71C1C;
+        color: #B71C1C;
+      }
+    }
+    td.ability.blue {
+      div.active {
+        background-color: #3F51B5;
+      }
+      div.passive {
+        border-color: #3F51B5;
+        color: #3F51B5;
+      }
+    }
+    td.ability.purple {
+      div.active {
+        background-color: #9C27B0;
+      }
+      div.passive {
+        border-color: #9C27B0;
+        color: #9C27B0;
+      }
+    }
+    td.ability.green {
+      div.active {
+        background-color: #4CAF50;
+      }
+      div.passive {
+        border-color: #4CAF50;
+        color: #4CAF50;
+      }
+    }
+    td.ability.black {
+      div.active {
+        background-color: #555555;
+      }
+      div.passive {
+        border-color: #555555;
+        color: #555555;
+      }
+    }
+  }
+}
+
+.selection {
+  .character {
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    img {
+      max-width: 125px;
+    }
+
+    .abilities {
+      margin-top: 5px;
+      .ability {
+        img {
+
+        }
+      }
+
+      .ability.passive {
+        img {
+          opacity: .3;
+        }
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      margin-left: 2px;
+      margin-right: 2px;
+      padding-left: 2px;
+      padding-right: 2px;
+
+      img {
+        max-width: 80px;
+      }
+    }
+  }
+
+  .team_abilities {
+    .active_color {
+      margin-bottom: 10px;
+      .color {
+        min-width: 50px;
+      }
+    }
+    .passive_abilities {
+      margin-left: 50px;
+    }
+  }
+}
+
+.footer {
+  background-color: #BBDEFB;
+  .thanks {
+    max-width: 400px;
+  }
+}
